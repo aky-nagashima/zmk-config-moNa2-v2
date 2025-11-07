@@ -26,7 +26,7 @@
 
         layer4_L {
             bindings = <&mo 4>;
-            key-positions = <37>;
+            key-positions = <37 38>;
         };
 
         layer4_R {
