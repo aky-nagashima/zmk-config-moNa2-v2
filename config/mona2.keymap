@@ -26,27 +26,17 @@
 
         layer4_L {
             bindings = <&mo 4>;
-            key-positions = <37 38>;
-        };
-
-        MB3 {
-            bindings = <&mkp MB3>;
-            key-positions = <30 31>;
-            layers = <0>;
+            key-positions = <37>;
         };
 
         layer4_R {
             bindings = <&mo 4>;
             key-positions = <39 40>;
         };
-    };
 
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        MB3 {
+            bindings = <&mkp MB3>;
+            key-positions = <30 31>;
         };
     };
 
