@@ -99,7 +99,7 @@
         layer_2 {
             bindings = <
 &kp TAB    &none   &none   &none   &none                     &none   &none      &kp LBKT  &kp RBKT  &kp BSLH
-&kp CAPS   &none   &none   &none   &none             &trans  &none   &none      &kp SEMI  &kp APOS  &kp ENTER
+&kp CAPS   &none   &none   &none   &none             &none   &none   &none      &kp SEMI  &kp APOS  &kp ENTER
 &kp LSHFT  &none   &none   &none   &none   &none     &none   &none   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans                                 &trans
             >;
@@ -109,10 +109,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
+&none      &kp LS(LC(TAB))     &none   &kp RC(TAB)          &none                        &kp INS  &kp HOME        &none           &none            &kp PAGE_UP
+&none      &kp LG(LEFT_ARROW)  &none   &kp RG(RIGHT_ARROW)  &none             &none      &kp DEL  &kp END         &kp UP_ARROW    &none            &kp PAGE_DOWN
+&kp LSHFT  &kp LC(LEFT_ARROW)  &none   &kp RC(RIGHT_ARROW)  &none   &none     &kp PSCRN  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT
+&trans     &trans              &trans  &trans               &trans  &trans    &trans     &trans                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
